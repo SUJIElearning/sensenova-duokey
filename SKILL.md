@@ -186,6 +186,21 @@ foreach (\C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md in @("package.
 > 已有 npm 发布时可走 `dsh plugin add @sujielearning/dsh-sensenova-key-status`（更省事）。
 > 卸载：`plugin_manager` 的 `remove_bundle`，target 传包名 `@sujielearning/dsh-sensenova-key-status`。
 
+### 步骤 9：装开机自启（强烈推荐）
+
+不装的话，**电脑一重启代理就没了**，朋友会以为坏了。双击一次即可：
+
+```
+proxy\install-autostart.bat
+```
+
+它会做两件事：写一个启动项到 Windows 启动文件夹 + 立即把代理跑起来。
+
+要取消：双击 `proxy\uninstall-autostart.bat`。
+要临时停掉：双击 `proxy\stop-proxy.bat`。
+
+> macOS / Linux 用户可用 `crontab -e` 加 `@reboot` 行，或写 systemd user unit。
+
 ## 运维
 
 - **看状态**：`curl http://127.0.0.1:15722/status`
