@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────────────
-//  商汤 SenseNova 多账户智能代理 (sensenova-duokey)
+//  商汤 SenseNova 多账户智能代理 (zhaoyu-sensenova-duokey)
 //  监听 127.0.0.1:15722,转发到 token.sensenova.cn
 //  特性:多账户 Key 轮询 + 429 自动切换 + 按实测恢复时间冷却
 //
 //  作者 / Author: zhaoyu
-//  仓库 / Repo:   https://github.com/SUJIElearning/sensenova-duokey
+//  仓库 / Repo:   https://github.com/SUJIElearning/zhaoyu-sensenova-duokey
 // ─────────────────────────────────────────────────────────────
 //
 // 用法:
@@ -881,8 +881,8 @@ const queue = new RequestQueue(keyManager);
 
 console.log('==========================================');
 console.log('  商汤 SenseNova 多账户智能代理  by zhaoyu');
-console.log('  sensenova-duokey  by zhaoyu');
-console.log('  https://github.com/SUJIElearning/sensenova-duokey');
+console.log('  zhaoyu-sensenova-duokey');
+console.log('  https://github.com/SUJIElearning/zhaoyu-sensenova-duokey');
 console.log('==========================================');
 console.log(` 监听地址:  http://127.0.0.1:${PROXY_PORT}`);
 console.log(` 上游地址:  https://${UPSTREAM_HOST}`);
