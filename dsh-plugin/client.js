@@ -1,5 +1,5 @@
 /**
- * @author zhaoyu · https://github.com/SUJIElearning/sensenova-duokey
+ * @author zhaoyu · https://github.com/SUJIElearning/zhaoyu-sensenova-duokey
  * Client half: one compact "available/total" readout below the composer card.
  *
  * Polls the Host relay (loopback, so no CORS problem inside the page) and
