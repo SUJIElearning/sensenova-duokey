@@ -1,20 +1,48 @@
-﻿{
+{
   "name": "@sujielearning/dsh-sensenova-key-status",
   "version": "1.0.0",
-  "private": true,
+  "description": "在 DeepSeek Harness 对话框下方实时显示商汤（SenseNova）多Key代理的可用 Key 数。配合 sensenova-duokey 代理使用。",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "sensenova",
+    "key-status",
+    "rate-limit"
+  ],
   "type": "module",
+  "license": "MIT",
+  "author": "zhaoyu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUJIElearning/sensenova-duokey.git",
+    "directory": "dsh-plugin"
+  },
+  "homepage": "https://github.com/SUJIElearning/sensenova-duokey#readme",
+  "bugs": {
+    "url": "https://github.com/SUJIElearning/sensenova-duokey/issues"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
     "./icon": "./icon.svg"
   },
-  "files": ["index.js", "client.js", "cordis.patch.yml", "icon.svg"],
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
     }
   }
 }
