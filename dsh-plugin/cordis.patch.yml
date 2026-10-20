@@ -1,0 +1,3 @@
+﻿- insert:
+    - id: sensenova-key-status
+      name: '@sujielearning/dsh-sensenova-key-status'
