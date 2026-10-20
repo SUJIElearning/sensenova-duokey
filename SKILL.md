@@ -2,7 +2,7 @@
 name: sensenova-duokey
 description: 商汤 SenseNova 多账户 API Key 轮询代理，一键安装。当用户说「装商汤多Key」「商汤老是限流」「我有多个商汤Key想一起用」「提升商汤API吞吐」或需要解决商汤 429/503 限流时使用。安装后多个账号的 Key 自动轮询，单 Key 撞限流时自动切换。
 metadata:
-  author: SUJIElearning
+  author: zhaoyu
   version: "1.0.0"
   created: 2026-10-20
 ---
