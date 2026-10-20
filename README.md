@@ -1,4 +1,4 @@
-# sensenova-duokey · zhaoyu 的商汤多Key轮询
+# zhaoyu-sensenova-duokey · 商汤多Key轮询
 
 > 把多个商汤（SenseNova）账号的 API Key 变成一个统一的 OpenAI 兼容端点。
 > 一个 Key 被限流自动换下一个，全部限流就安静等待——不再频繁报 429/503。
@@ -28,8 +28,8 @@
 
 把这两句话发给你的 DSH：
 
-> 帮我安装 `sensenova-duokey` 技能，仓库地址：
-> `https://github.com/SUJIElearning/sensenova-duokey`
+> 帮我安装 `zhaoyu-sensenova-duokey` 技能，仓库地址：
+> `https://github.com/SUJIElearning/zhaoyu-sensenova-duokey`
 
 AI 会读取仓库里的 `SKILL.md`，自动完成：下载脚本 → 问你收集 Key → 写好配置 → 启动 → 验证。
 
@@ -37,8 +37,8 @@ AI 会读取仓库里的 `SKILL.md`，自动完成：下载脚本 → 问你收�
 
 ```bash
 # 1. 下载
-git clone https://github.com/SUJIElearning/sensenova-duokey.git
-cd sensenova-duokey/proxy
+git clone https://github.com/SUJIElearning/zhaoyu-sensenova-duokey.git
+cd zhaoyu-sensenova-duokey/proxy
 
 # 2. 配 Key（Windows 用 start-proxy.bat 里的 set 行；macOS/Linux 用环境变量）
 set SENSENOVA_API_KEY_1=sk-你的第一个Key
@@ -114,4 +114,4 @@ curl http://127.0.0.1:15722/status
 
 ---
 
-<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
+<sub>by **zhaoyu** · [zhaoyu-sensenova-duokey](https://github.com/SUJIElearning/zhaoyu-sensenova-duokey)</sub>
