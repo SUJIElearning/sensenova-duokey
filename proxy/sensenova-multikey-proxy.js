@@ -1,11 +1,19 @@
-// 商汤 SenseNova 多账户智能代理 v1
-// 监听 127.0.0.1:15722,转发到 token.sensenova.cn
-// 特性:多账户 Key 轮询 + 429 自动切换 + 全限流排队冷却
+// ─────────────────────────────────────────────────────────────
+//  商汤 SenseNova 多账户智能代理 (sensenova-duokey)
+//  监听 127.0.0.1:15722,转发到 token.sensenova.cn
+//  特性:多账户 Key 轮询 + 429 自动切换 + 按实测恢复时间冷却
+//
+//  作者 / Author: zhaoyu
+//  仓库 / Repo:   https://github.com/SUJIElearning/sensenova-duokey
+// ─────────────────────────────────────────────────────────────
 //
 // 用法:
-//   1. 在 start-proxy.bat 里设置多个 Key
+//   1. 在 start-proxy.bat 里设置 Key,或写进 ~/.dsh/.credentials.yaml
 //   2. 双击 start-proxy.bat 启动
-//   3. DSH 配置不用改
+//   3. 客户端 Base URL 指向 http://127.0.0.1:15722/v1
+//
+// 水印会在启动横幅中再次出现（见文件末尾的 banner）。
+// ─────────────────────────────────────────────────────────────
 
 const http = require('http');
 const https = require('https');
@@ -872,7 +880,9 @@ const keyManager = new KeyManager(apiKeys);
 const queue = new RequestQueue(keyManager);
 
 console.log('==========================================');
-console.log(' 商汤 SenseNova 多账户智能代理 v1');
+console.log('  商汤 SenseNova 多账户智能代理');
+console.log('  sensenova-duokey  by zhaoyu');
+console.log('  https://github.com/SUJIElearning/sensenova-duokey');
 console.log('==========================================');
 console.log(` 监听地址:  http://127.0.0.1:${PROXY_PORT}`);
 console.log(` 上游地址:  https://${UPSTREAM_HOST}`);
