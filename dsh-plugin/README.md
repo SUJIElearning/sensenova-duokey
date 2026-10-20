@@ -1,4 +1,4 @@
-# dsh-plugin · Key 状态观察窗口（可选）
+# dsh-plugin · zhaoyu 的 Key 状态观察窗口（可选）
 
 DeepSeek Harness 的客户端插件，在**对话框下方**显示一行实时状态：
 
