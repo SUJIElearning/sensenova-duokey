@@ -1,4 +1,4 @@
-# proxy · 多 Key 轮询代理
+# proxy · zhaoyu 的多 Key 轮询代理
 
 纯 Node.js 实现，**零第三方依赖**（只用 `http`/`https`/`fs`/`path` 内置模块）。
 
