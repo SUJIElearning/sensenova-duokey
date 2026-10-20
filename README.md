@@ -1,7 +1,9 @@
-# sensenova-duokey · 商汤多Key轮询
+# sensenova-duokey · zhaoyu 的商汤多Key轮询
 
 > 把多个商汤（SenseNova）账号的 API Key 变成一个统一的 OpenAI 兼容端点。
 > 一个 Key 被限流自动换下一个，全部限流就安静等待——不再频繁报 429/503。
+>
+> **作者：zhaoyu** · [GitHub](https://github.com/SUJIElearning)
 
 ## 为什么需要它
 
