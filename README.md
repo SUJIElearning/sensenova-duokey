@@ -75,6 +75,16 @@ API Key 填任意一个真实的商汤 Key 即可（代理会自己轮换）。
 
 模型名用商汤的：`deepseek-flash`、`deepseek-v4-flash`、`glm-5.2`、`kimi-k3` 等。
 
+## 开机自启（推荐）
+
+代理是个普通进程，**电脑重启后就没了**。双击一次装好自启：
+
+```
+proxy\install-autostart.bat
+```
+
+取消：`proxy\uninstall-autostart.bat` ｜ 临时停止：`proxy\stop-proxy.bat`
+
 ## 常用操作
 
 ```bash
