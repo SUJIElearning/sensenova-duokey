@@ -8,6 +8,9 @@
 |---|---|
 | `sensenova-multikey-proxy.js` | 代理主体 |
 | `start-proxy.bat` | Windows 启动器（含清理旧进程逻辑） |
+| `install-autostart.bat` | 一键安装开机自启（双击一次，以后随 Windows 启动） |
+| `uninstall-autostart.bat` | 移除开机自启 |
+| `stop-proxy.bat` | 停止正在运行的代理 |
 
 ## 配置 Key 的三种方式
 
