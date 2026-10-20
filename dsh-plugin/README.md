@@ -56,3 +56,7 @@ Key 总数是**动态读取**的：以后你在代理里加 Key，这里会自�
 ```bash
 dsh plugin remove @sujielearning/dsh-sensenova-key-status
 ```
+
+---
+
+<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
