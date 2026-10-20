@@ -7,7 +7,7 @@ metadata:
   created: 2026-10-20
 ---
 
-# 商汤多Key轮询（sensenova-duokey）
+# 商汤多Key轮询（sensenova-duokey）· by zhaoyu
 
 把多个商汤账号的 API Key 变成一个统一的 OpenAI 兼容端点，自动轮询、自动切换、自动冷却。解决"单个商汤账号额度不够、频繁 429/503"的问题。
 
