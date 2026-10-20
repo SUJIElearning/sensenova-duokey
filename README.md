@@ -109,3 +109,7 @@ curl http://127.0.0.1:15722/status
 ## 许可
 
 [MIT](./LICENSE) — 随便用、随便改、商用也行，出事别找我。
+
+---
+
+<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
