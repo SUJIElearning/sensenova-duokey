@@ -71,4 +71,4 @@ curl http://127.0.0.1:15722/status   # 每个 Key 的详细状态
 
 ---
 
-<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
+<sub>by **zhaoyu** · [zhaoyu-sensenova-duokey](https://github.com/SUJIElearning/zhaoyu-sensenova-duokey)</sub>
