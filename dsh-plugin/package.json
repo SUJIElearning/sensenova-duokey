@@ -1,7 +1,7 @@
 {
   "name": "@sujielearning/dsh-sensenova-key-status",
   "version": "1.0.0",
-  "description": "在 DeepSeek Harness 对话框下方实时显示商汤（SenseNova）多Key代理的可用 Key 数。配合 sensenova-duokey 代理使用。",
+  "description": "在 DeepSeek Harness 对话框下方实时显示商汤（SenseNova）多Key代理的可用 Key 数。配合 zhaoyu-sensenova-duokey 代理使用。",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
@@ -14,12 +14,12 @@
   "author": "zhaoyu",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SUJIElearning/sensenova-duokey.git",
+    "url": "git+https://github.com/SUJIElearning/zhaoyu-sensenova-duokey.git",
     "directory": "dsh-plugin"
   },
-  "homepage": "https://github.com/SUJIElearning/sensenova-duokey#readme",
+  "homepage": "https://github.com/SUJIElearning/zhaoyu-sensenova-duokey#readme",
   "bugs": {
-    "url": "https://github.com/SUJIElearning/sensenova-duokey/issues"
+    "url": "https://github.com/SUJIElearning/zhaoyu-sensenova-duokey/issues"
   },
   "exports": {
     ".": "./index.js",
