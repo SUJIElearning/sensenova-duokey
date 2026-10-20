@@ -1,4 +1,5 @@
 /**
+ * @author zhaoyu · https://github.com/SUJIElearning/sensenova-duokey
  * Host half: relay the SenseNova proxy's /status to the Web page.
  *
  * The browser cannot read http://127.0.0.1:15722/status directly: that proxy
