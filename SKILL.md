@@ -1,5 +1,5 @@
 ---
-name: sensenova-duokey
+name: zhaoyu-sensenova-duokey
 description: 商汤 SenseNova 多账户 API Key 轮询代理，一键安装。当用户说「装商汤多Key」「商汤老是限流」「我有多个商汤Key想一起用」「提升商汤API吞吐」或需要解决商汤 429/503 限流时使用。安装后多个账号的 Key 自动轮询，单 Key 撞限流时自动切换。
 metadata:
   author: zhaoyu
@@ -7,7 +7,7 @@ metadata:
   created: 2026-10-20
 ---
 
-# 商汤多Key轮询（sensenova-duokey）· by zhaoyu
+# 商汤多Key轮询（zhaoyu-sensenova-duokey）
 
 把多个商汤账号的 API Key 变成一个统一的 OpenAI 兼容端点，自动轮询、自动切换、自动冷却。解决"单个商汤账号额度不够、频繁 429/503"的问题。
 
@@ -35,17 +35,17 @@ node --version
 优先从技能自带文件复制（如果本技能目录里有 `proxy/`），否则从仓库下载：
 
 ```bash
-mkdir -p ~/.sensenova-duokey
+mkdir -p ~/.zhaoyu-sensenova-duokey
 # 从仓库下载（二选一，看用户网络）
-curl -fsSL https://raw.githubusercontent.com/SUJIElearning/sensenova-duokey/main/proxy/sensenova-multikey-proxy.js -o ~/.sensenova-duokey/sensenova-multikey-proxy.js
+curl -fsSL https://raw.githubusercontent.com/SUJIElearning/zhaoyu-sensenova-duokey/main/proxy/sensenova-multikey-proxy.js -o ~/.zhaoyu-sensenova-duokey/sensenova-multikey-proxy.js
 # 或者 git clone 整个仓库后复制
 ```
 
 Windows 用 PowerShell：
 
 ```powershell
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.sensenova-duokey" | Out-Null
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/SUJIElearning/sensenova-duokey/main/proxy/sensenova-multikey-proxy.js" -OutFile "$env:USERPROFILE\.sensenova-duokey\sensenova-multikey-proxy.js"
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.zhaoyu-sensenova-duokey" | Out-Null
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/SUJIElearning/zhaoyu-sensenova-duokey/main/proxy/sensenova-multikey-proxy.js" -OutFile "$env:USERPROFILE\.zhaoyu-sensenova-duokey\sensenova-multikey-proxy.js"
 ```
 
 ### 步骤 3：向用户收集 API Key
@@ -76,7 +76,7 @@ refs:
 # Linux/macOS: start.sh
 export SENSENOVA_API_KEY_1=sk-xxx
 export SENSENOVA_API_KEY_2=sk-yyy
-node ~/.sensenova-duokey/sensenova-multikey-proxy.js
+node ~/.zhaoyu-sensenova-duokey/sensenova-multikey-proxy.js
 ```
 
 ```bat
@@ -84,20 +84,20 @@ REM Windows: start.bat (必须存成 GBK/ANSI 编码，否则中文注释乱码)
 @echo off
 set SENSENOVA_API_KEY_1=sk-xxx
 set SENSENOVA_API_KEY_2=sk-yyy
-node "%USERPROFILE%\.sensenova-duokey\sensenova-multikey-proxy.js"
+node "%USERPROFILE%\.zhaoyu-sensenova-duokey\sensenova-multikey-proxy.js"
 pause
 ```
 
 ### 步骤 5：启动代理
 
 ```bash
-node ~/.sensenova-duokey/sensenova-multikey-proxy.js
+node ~/.zhaoyu-sensenova-duokey/sensenova-multikey-proxy.js
 ```
 
 Windows 要后台隐藏运行：
 
 ```powershell
-Start-Process -FilePath "node" -ArgumentList "$env:USERPROFILE\.sensenova-duokey\sensenova-multikey-proxy.js" -WindowStyle Minimized
+Start-Process -FilePath "node" -ArgumentList "$env:USERPROFILE\.zhaoyu-sensenova-duokey\sensenova-multikey-proxy.js" -WindowStyle Minimized
 ```
 
 **重启代理的正确姿势**（重要，避免用户网络中断）：
