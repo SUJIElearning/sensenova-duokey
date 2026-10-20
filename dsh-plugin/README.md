@@ -59,4 +59,4 @@ dsh plugin remove @sujielearning/dsh-sensenova-key-status
 
 ---
 
-<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
+<sub>by **zhaoyu** · [zhaoyu-sensenova-duokey](https://github.com/SUJIElearning/zhaoyu-sensenova-duokey)</sub>
