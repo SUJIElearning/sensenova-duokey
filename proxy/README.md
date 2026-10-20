@@ -68,3 +68,7 @@ curl http://127.0.0.1:15722/status   # 每个 Key 的详细状态
 | `MAX_INFLIGHT_PER_KEY` | `4` | 每 Key 允许的并发请求数 |
 
 **改参数时注意**：`COOLDOWN_MAX_MS < REQUEST_DEADLINE_MS` 是硬约束。冷却上限一旦超过单请求预算，请求会在"所有 Key 都冷却"时立刻返回 503，等于代理不可用。
+
+---
+
+<sub>by **zhaoyu** · [sensenova-duokey](https://github.com/SUJIElearning/sensenova-duokey)</sub>
