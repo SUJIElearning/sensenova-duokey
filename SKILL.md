@@ -152,11 +152,39 @@ llm-pi-ai:
 
 只有 DSH 用户需要。装完能在对话框下方看到 `● 5/6 Key` 的实时状态。
 
+**从 GitHub 安装（推荐，不需要 npm 账号）**：
+
+1. 把仓库里的 `dsh-plugin/` 目录下载到本地，例如 `~/.dsh-plugins/dsh-sensenova-key-status`：
+
 ```bash
-dsh plugin add @sujielearning/dsh-sensenova-key-status
+# macOS / Linux
+mkdir -p ~/.dsh-plugins/dsh-sensenova-key-status
+BASE=https://raw.githubusercontent.com/SUJIElearning/zhaoyu-sensenova-duokey/main/dsh-plugin
+for f in package.json cordis.patch.yml index.js client.js icon.svg README.md; do
+  curl -fsSL "\/\C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md" -o ~/.dsh-plugins/dsh-sensenova-key-status/"\C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md"
+done
 ```
 
-或者用本地目录安装：让 DSH 用 plugin_manager 安装 `dsh-plugin/` 目录。
+```powershell
+# Windows PowerShell
+\ = "\C:\Users\sujie\.dsh-plugins\dsh-sensenova-key-status"
+New-Item -ItemType Directory -Force -Path \ | Out-Null
+\ = "https://raw.githubusercontent.com/SUJIElearning/zhaoyu-sensenova-duokey/main/dsh-plugin"
+foreach (\C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md in @("package.json","cordis.patch.yml","index.js","client.js","icon.svg","README.md")) {
+  Invoke-WebRequest -Uri "\/\C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md" -OutFile (Join-Path \ \C:\Users\sujie\Desktop\zhaoyu-sensenova-duokey\SKILL.md)
+}
+```
+
+2. 用 `plugin_manager` 的 `install_bundle` 安装该目录的**绝对路径**：
+
+```json
+{"action": "install_bundle", "target": "<上一步的绝对路径>"}
+```
+
+3. 验证：`curl http://127.0.0.1:15799/keys` 应返回 `{"ok":true,"available":N,"total":M}`
+
+> 已有 npm 发布时可走 `dsh plugin add @sujielearning/dsh-sensenova-key-status`（更省事）。
+> 卸载：`plugin_manager` 的 `remove_bundle`，target 传包名 `@sujielearning/dsh-sensenova-key-status`。
 
 ## 运维
 
