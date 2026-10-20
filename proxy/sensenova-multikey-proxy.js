@@ -880,7 +880,7 @@ const keyManager = new KeyManager(apiKeys);
 const queue = new RequestQueue(keyManager);
 
 console.log('==========================================');
-console.log('  商汤 SenseNova 多账户智能代理');
+console.log('  商汤 SenseNova 多账户智能代理  by zhaoyu');
 console.log('  sensenova-duokey  by zhaoyu');
 console.log('  https://github.com/SUJIElearning/sensenova-duokey');
 console.log('==========================================');
