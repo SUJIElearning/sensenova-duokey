@@ -46,7 +46,15 @@ Windows 用 PowerShell：
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.zhaoyu-sensenova-duokey" | Out-Null
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/SUJIElearning/zhaoyu-sensenova-duokey/main/proxy/sensenova-multikey-proxy.js" -OutFile "$env:USERPROFILE\.zhaoyu-sensenova-duokey\sensenova-multikey-proxy.js"
+
+# 【必做】解除「来自互联网」标记。
+# Windows 会给下载的文件打上 Zone.Identifier 标记，之后每次双击 .bat 都会弹
+# "无法验证发布者，你确定要运行此软件吗？"。Unblock-File 就是去掉这个标记。
+Get-ChildItem "$env:USERPROFILE\.zhaoyu-sensenova-duokey" -Recurse -File | Unblock-File
 ```
+
+> ⚠️ **这一步不能省**。漏掉它，用户每次开机都会看到"未知发布者"弹窗，会以为装坏了。
+> 若已经漏了，让用户跑一次 `proxy\unblock-files.bat`，或者执行上面那条 `Unblock-File` 命令。
 
 ### 步骤 3：向用户收集 API Key
 
