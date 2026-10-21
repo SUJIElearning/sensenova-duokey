@@ -75,6 +75,19 @@ API Key 填任意一个真实的商汤 Key 即可（代理会自己轮换）。
 
 模型名用商汤的：`deepseek-flash`、`deepseek-v4-flash`、`glm-5.2`、`kimi-k3` 等。
 
+## 遇到「未知发布者」弹窗？
+
+从 GitHub 下载的文件，Windows 会打上「来自互联网」标记，双击 `.bat` 就会弹
+「无法验证发布者，你确定要运行此软件吗？」。**这不是病毒警告，是下载标记。**
+
+一条命令解决：
+
+```powershell
+Get-ChildItem "<你的安装目录>" -Recurse -File | Unblock-File
+```
+
+或者双击 `proxy\unblock-files.bat`。跑一次，以后不再弹。
+
 ## 开机自启（推荐）
 
 代理是个普通进程，**电脑重启后就没了**。双击一次装好自启：
