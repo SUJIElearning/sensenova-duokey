@@ -11,6 +11,7 @@
 | `install-autostart.bat` | 一键安装开机自启（双击一次，以后随 Windows 启动） |
 | `uninstall-autostart.bat` | 移除开机自启 |
 | `stop-proxy.bat` | 停止正在运行的代理 |
+| `unblock-files.bat` | 去掉「来自互联网」标记，消除「未知发布者」弹窗 |
 
 ## 配置 Key 的三种方式
 
